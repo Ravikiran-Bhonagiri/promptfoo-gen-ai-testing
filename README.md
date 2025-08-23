@@ -141,8 +141,8 @@ Promptfoo is [MIT-licensed](https://github.com/promptfoo/promptfoo/blob/main/LIC
 
 ## 📬 Contact
 
-* \[Your Twitter/LinkedIn/email/etc.]
-* Or just open an issue or PR!
+- [LinkedIn – Ravikiran Bhonagiri](https://www.linkedin.com/in/ravikiran-bhonagiri/)
+- Email: [bhonagiri.ravikiran@gmail.com](mailto:bhonagiri.ravikiran@gmail.com)
 
 ---
 
