@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: "Simple promptfoo example"
+
+prompts:
+  - "Say hello to {{name}}."
+  - "Give a short compliment to {{name}}."
+
+providers:
+  - "openai:gpt-4o-mini"
+
+tests:
+  - vars:
+      name: Alice
+
+  - vars:
+      name: Bob
+    assert:
+      # Check if the output contains the name "Bob"
+      - type: contains
+        value: Bob
+
+  - vars:
+      name: Charlie
+    assert:
+      # Check if the output includes the word "hello"
+      - type: icontains
+        value: hello
+
+      # Check if the output is not too long
+      - type: javascript
+        value: output.length < 50

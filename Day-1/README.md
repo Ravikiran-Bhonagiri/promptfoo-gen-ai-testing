@@ -97,45 +97,59 @@ After running the initialization with `npx promptfoo init`, several essential fi
 
 ---
 
-### `tests.yaml` (or `tests.json`)
+## ▶️ Running Your First Evaluation with Advanced Options
 
-#### **Purpose**
+After setting up your config and test files, you can run Promptfoo’s evaluation with additional options for even more control:
 
-* Stores **test case data** separately from the main config.
-* Each entry provides specific input variables and, optionally, expected outputs.
+### **Basic Evaluation**
 
-#### **Importance**
+```bash
+promptfoo eval
+```
 
-* Enables clear separation of configuration (the “how”) and test data (the “what”).
-* Makes your test suite extensible: Add more cases by editing this file without cluttering your main config.
-* Useful for both manual and auto-generated datasets.
-
----
-
-### `.gitignore`
-
-* **Purpose:** Tells Git to ignore files and folders that should not be tracked (e.g., caches, sensitive data, dependencies).
-* **Importance:**
-
-  * Keeps your repo clean and secure.
-  * Prevents accidental commits of large files or secrets.
+Runs your tests and shows a summary in the terminal.
 
 ---
 
-### `README.md` (auto-generated or create your own)
+### **Exporting Results as HTML**
 
-* **Purpose:** Explains your project, setup steps, and usage.
-* **Importance:**
+To save a detailed results matrix as an HTML file, use the `--output` flag:
 
-  * Provides essential documentation for you and others.
-  * Describes what the project does and how to run it.
+```bash
+promptfoo eval --output Day1.html
+```
+
+* This will generate a file called `Day1.html` in your current directory.
+* Open it in your browser to visually inspect results, compare outputs, and review assertions.
 
 ---
 
-### (Other files/folders)
+### **Disabling Cache for Fresh Model Calls**
 
-* **`cache/` or similar:** May be created for storing output cache (often gitignored).
-* **Example scripts:** May be included for automation or integration examples.
+By default, Promptfoo caches LLM outputs for efficiency. To **force fresh outputs** on each run (ignore cache), add `--no-cache`:
+
+```bash
+promptfoo eval --no-cache
+```
+
+* This is useful if you want to make sure you’re seeing new responses from the LLM for each test, or if you’ve just updated your prompt/tests and want to avoid reusing old outputs.
+
+---
+
+### **Combine Both Options**
+
+You can use both flags together:
+
+```bash
+promptfoo eval --output Day1.html --no-cache
+```
+
+* This will generate a fresh set of results and export them as an HTML file for review.
+
+---
+
+**Tip:**
+Use these options whenever you want to track daywise progress or need to document exactly what happened on a specific date!
 
 ---
 

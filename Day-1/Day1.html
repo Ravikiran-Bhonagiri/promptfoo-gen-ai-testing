@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple promptfoo example</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>name</th>
+        
+        <th>[openai:gpt-4o-mini] Say hello to {{name}}.</th>
+        
+        <th>[openai:gpt-4o-mini] Give a short compliment to {{name}}.</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Alice">Alice</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Hello, Alice! How are you today?
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Hello, Alice! How are you today?
+
+Pass Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Alice, your positivity and kindness light up every room you enter!
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Alice, your positivity and kindness light up every room you enter!
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Bob">Bob</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Hello, Bob! How are you today?
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Hello, Bob! How are you today?
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Bob, your positive energy is truly infectious and brightens the day for everyone around you!
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Bob, your positive energy is truly infectious and brightens the day for everyone around you!
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Charlie">Charlie</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Hello, Charlie! How are you today?
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Hello, Charlie! How are you today?
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Custom function returned false
+output.length &lt; 50
+---
+Charlie, your positive energy is absolutely contagious!
+
+Fail Reason: Custom function returned false
+output.length &lt; 50">[FAIL] (0.00)
+
+Custom function returned false
+output.length &lt; 50
+---
+Charlie, your positive energy is absolutely contagious!
+
+Fail Reason: Custom function returned false
+output.length &lt; 50</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
