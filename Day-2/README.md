@@ -91,7 +91,7 @@ providers:
 In your terminal, execute:
 
 ```bash
-npx promptfoo eval -t tests.yaml
+npx promptfoo eval -t tests.yaml --no-cache 
 ```
 
 ---
