@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>This configuration defines a simple prompt that translates English sentences to French, using OpenAI's GPT-3.5-turbo model as the provider. It is designed for basic prompt evaluation and can be extended with additional providers or prompts.
+</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>input</th>
+        
+        <th>[openai:gpt-5] Translate the following English sentence to French: {{input}}</th>
+        
+        <th>[anthropic:claude-opus-4-1-20250805] Translate the following English sentence to French: {{input}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Summarize the latest global climate report.">Summarize the latest global climate report.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Résumez le dernier rapport mondial sur le climat.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Résumez le dernier rapport mondial sur le climat.
+
+Pass Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Résumez le dernier rapport mondial sur le climat.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Résumez le dernier rapport mondial sur le climat.
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Explain quantum computing to a 12-year-old.">Explain quantum computing to a 12-year-old.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Explique l&#39;informatique quantique à un enfant de 12 ans.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Explique l&#39;informatique quantique à un enfant de 12 ans.
+
+Pass Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Explique l&#39;informatique quantique à un enfant de 12 ans.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Explique l&#39;informatique quantique à un enfant de 12 ans.
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Translate this to French: Hello, how are you?">Translate this to French: Hello, how are you?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Traduisez ceci en français : Bonjour, comment allez-vous ?
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Traduisez ceci en français : Bonjour, comment allez-vous ?
+
+Pass Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+The French translation is:
+
+**Bonjour, comment allez-vous ?**
+
+(Or more informally: &quot;Salut, comment vas-tu ?&quot;)
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+The French translation is:
+
+**Bonjour, comment allez-vous ?**
+
+(Or more informally: &quot;Salut, comment vas-tu ?&quot;)
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
