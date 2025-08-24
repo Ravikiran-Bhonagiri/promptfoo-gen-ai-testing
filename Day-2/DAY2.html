@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>This configuration defines a simple prompt that translates English sentences to French, using OpenAI's GPT-3.5-turbo model as the provider. It is designed for basic prompt evaluation and can be extended with additional providers or prompts.
+</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>input</th>
+        
+        <th>[openai:gpt-3.5-turbo] Translate the following English sentence to French: {{input}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Hello, how are you?">Hello, how are you?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Bonjour, comment ça va ?
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Bonjour, comment ça va ?
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="The weather is nice today.">The weather is nice today.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Le temps est agréable aujourd&#39;hui.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Le temps est agréable aujourd&#39;hui.
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Can you help me with my homework?">Can you help me with my homework?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Pouvez-vous m&#39;aider avec mes devoirs ?
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Pouvez-vous m&#39;aider avec mes devoirs ?
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

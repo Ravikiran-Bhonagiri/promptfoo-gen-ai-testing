@@ -1,0 +1,9 @@
+description: >
+  This configuration defines a simple prompt that translates English sentences to French,
+  using OpenAI's GPT-3.5-turbo model as the provider.
+  It is designed for basic prompt evaluation and can be extended with additional providers or prompts.
+
+prompts:
+  - "Translate the following English sentence to French: {{input}}"
+providers:
+  - openai:gpt-3.5-turbo  # Replace with your preferred provider/model if needed

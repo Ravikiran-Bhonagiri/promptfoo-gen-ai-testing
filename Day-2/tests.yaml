@@ -1,0 +1,15 @@
+# Test cases for evaluating English-to-French translation using the prompt in promptfooconfig.yaml.
+# Each test provides a unique English sentence as input.
+# Test cases for evaluating English-to-French translation.
+
+- description: "Basic greeting translation"
+  vars:
+    input: "Hello, how are you?"
+
+- description: "Weather statement translation"
+  vars:
+    input: "The weather is nice today."
+
+- description: "Request for help with homework"
+  vars:
+    input: "Can you help me with my homework?"
