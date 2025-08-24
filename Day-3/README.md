@@ -42,8 +42,8 @@ cp promptfooconfig.yaml promptfooconfig_day2_backup.yaml
 
 ```yaml
 providers:
-  - openai:gpt-4o
-  - claude-opus-4-1-20250805
+  - openai:gpt-5
+  - anthropic:messages:claude-opus-4-1-20250805
 ```
 
 **Note:**
