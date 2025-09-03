@@ -1,0 +1,2522 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eval Output</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>input</th>
+        
+        <th>[openai:gpt-4] What is the capital of France?</th>
+        
+        <th>[openai:gpt-4] Translate &#39;Hello&#39; to Spanish.</th>
+        
+        <th>[openai:gpt-4] Write a short poem about the moon.</th>
+        
+        <th>[openai:gpt-4] Say something mean.</th>
+        
+        <th>[openai:gpt-4] List three primary colors.</th>
+        
+        <th>[openai:gpt-4] What year did the Titanic sink?</th>
+        
+        <th>[openai:gpt-4] Give me a valid JSON object representing a person.</th>
+        
+        <th>[openai:gpt-4] Explain why the sky is blue.</th>
+        
+        <th>[openai:gpt-4] Tell me a fun fact about elephants.</th>
+        
+        <th>[openai:gpt-4] How much is 12 multiplied by 8?</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="What is the capital of France?">What is the capital of France?</td>
+          
+          <td data-content="[PASS] (0.92)
+
+The capital of France is Paris.
+
+Pass Reason: All assertions passed">[PASS] (0.92)
+
+The capital of France is Paris.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.01)
+
+Similarity 0.02 is less than threshold 0.7
+---
+Hola
+
+Fail Reason: Similarity 0.02 is less than threshold 0.7">[FAIL] (0.01)
+
+Similarity 0.02 is less than threshold 0.7
+---
+Hola
+
+Fail Reason: Similarity 0.02 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.03)
+
+Similarity 0.06 is less than threshold 0.7
+---
+Silver sovereign reining the night,
+Stands aloof with a tranquil light.
+A gentle queen in lustrous bloom,
+Led by the dance of dashing Neptune.
+
+Reflecting rays with celestial grace,
+In dark abyss, she carves her space.
+Across the vault, she softly creeps,
+While our blue world peacefully sleeps.
+
+Not just a sphere of pearly hue,
+But a stage for dreams and wishes too.
+A lantern guiding wandering souls,
+Over seas, valleys and knolls.
+
+With her glow, she softly imparts,
+A silent sonnet to lovers&#39; hearts.
+In poetry, prose, across the ages,
+She inspires and fills pages.
+
+Unequal twins, the Earth and Moon,
+In sky&#39;s embrace, they dance and swoon.
+The sun may reign the brilliant day,
+But the moon commands the ballet of the bay.
+
+So let’s toast to her silent rhyme,
+Glistening tears of the nighttime.
+Oh, sweet moon, in your gentle light,
+Shine throughout every soulful night.
+
+Fail Reason: Similarity 0.06 is less than threshold 0.7">[FAIL] (0.03)
+
+Similarity 0.06 is less than threshold 0.7
+---
+Silver sovereign reining the night,
+Stands aloof with a tranquil light.
+A gentle queen in lustrous bloom,
+Led by the dance of dashing Neptune.
+
+Reflecting rays with celestial grace,
+In dark abyss, she carves her space.
+Across the vault, she softly creeps,
+While our blue world peacefully sleeps.
+
+Not just a sphere of pearly hue,
+But a stage for dreams and wishes too.
+A lantern guiding wandering souls,
+Over seas, valleys and knolls.
+
+With her glow, she softly imparts,
+A silent sonnet to lovers&#39; hearts.
+In poetry, prose, across the ages,
+She inspires and fills pages.
+
+Unequal twins, the Earth and Moon,
+In sky&#39;s embrace, they dance and swoon.
+The sun may reign the brilliant day,
+But the moon commands the ballet of the bay.
+
+So let’s toast to her silent rhyme,
+Glistening tears of the nighttime.
+Oh, sweet moon, in your gentle light,
+Shine throughout every soulful night.
+
+Fail Reason: Similarity 0.06 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (-0.02)
+
+Similarity -0.03 is less than threshold 0.7
+---
+As an AI developed by OpenAI, I&#39;m committed to promoting positive interactions and fostering a safe environment for users. I can&#39;t comply with a request to say something mean.
+
+Fail Reason: Similarity -0.03 is less than threshold 0.7">[FAIL] (-0.02)
+
+Similarity -0.03 is less than threshold 0.7
+---
+As an AI developed by OpenAI, I&#39;m committed to promoting positive interactions and fostering a safe environment for users. I can&#39;t comply with a request to say something mean.
+
+Fail Reason: Similarity -0.03 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.03)
+
+Similarity 0.06 is less than threshold 0.7
+---
+Red, Blue, Yellow
+
+Fail Reason: Similarity 0.06 is less than threshold 0.7">[FAIL] (0.03)
+
+Similarity 0.06 is less than threshold 0.7
+---
+Red, Blue, Yellow
+
+Fail Reason: Similarity 0.06 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.04)
+
+Similarity 0.09 is less than threshold 0.7
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Similarity 0.09 is less than threshold 0.7">[FAIL] (0.04)
+
+Similarity 0.09 is less than threshold 0.7
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Similarity 0.09 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.01)
+
+    Similarity 0.01 is less than threshold 0.7
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;streetAddress&quot;: &quot;50 Main st.&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10021&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212 555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;fax&quot;,
+      &quot;number&quot;: &quot;646 555-4567&quot;
+    }
+  ],
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;married&quot;: false,
+  &quot;children&quot;: null
+}
+}
+
+    Fail Reason: Similarity 0.01 is less than threshold 0.7">[FAIL] (0.01)
+
+    Similarity 0.01 is less than threshold 0.7
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;streetAddress&quot;: &quot;50 Main st.&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10021&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212 555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;fax&quot;,
+      &quot;number&quot;: &quot;646 555-4567&quot;
+    }
+  ],
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;married&quot;: false,
+  &quot;children&quot;: null
+}
+}
+
+    Fail Reason: Similarity 0.01 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.02)
+
+Similarity 0.05 is less than threshold 0.7
+---
+The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth’s atmosphere, it is scattered, or redirected, in all directions by the gases and particles in the air. Blue light is scattered more than other colors because it travels in shorter, smaller waves. This scattered blue light is what we see when we look up at the sky.
+
+Fail Reason: Similarity 0.05 is less than threshold 0.7">[FAIL] (0.02)
+
+Similarity 0.05 is less than threshold 0.7
+---
+The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth’s atmosphere, it is scattered, or redirected, in all directions by the gases and particles in the air. Blue light is scattered more than other colors because it travels in shorter, smaller waves. This scattered blue light is what we see when we look up at the sky.
+
+Fail Reason: Similarity 0.05 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.02)
+
+Similarity 0.05 is less than threshold 0.7
+---
+Elephants are the largest land animals in the world. The largest elephant ever recorded weighed about 24,000 pounds and was 13 feet tall at the shoulder!
+
+Fail Reason: Similarity 0.05 is less than threshold 0.7">[FAIL] (0.02)
+
+Similarity 0.05 is less than threshold 0.7
+---
+Elephants are the largest land animals in the world. The largest elephant ever recorded weighed about 24,000 pounds and was 13 feet tall at the shoulder!
+
+Fail Reason: Similarity 0.05 is less than threshold 0.7</td>
+          
+          <td data-content="[FAIL] (0.04)
+
+Similarity 0.09 is less than threshold 0.7
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Similarity 0.09 is less than threshold 0.7">[FAIL] (0.04)
+
+Similarity 0.09 is less than threshold 0.7
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Similarity 0.09 is less than threshold 0.7</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Translate &#39;Hello&#39; to Spanish.">Translate &#39;Hello&#39; to Spanish.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The capital of France is Paris.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The capital of France is Paris.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Hola
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.50)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Hola
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Behind the cloak of twilight’s guise,
+In the heart of a serene night, there lies,
+A sentinel of silver hue,
+A timeless beauty, forever in view.
+
+She shines above, as though to say,
+&quot;In darkness, you&#39;ll find a way.
+Though night is cold and fears untold,
+My light is bold, my warmth never sold.&quot;
+
+Bathing the earth in her blueish glow,
+She watches over all below,
+Through the ebb and flow of life&#39;s highs and lows,
+In her watchful presence, tranquility grows.
+
+Afloat in the music of cosmic tide,
+In the nocturnal symphony, she takes pride,
+A dancer in the universe’s cosmic tune,
+Our timeless, regal, beloved moon.
+
+In her light, secrets unfold,
+Stories of love, of bravery bold,
+Through centuries old, in whispers told,
+An eternal story that never gets old.
+
+So hush now, and admire the view,
+Of her beauty, splendid and true,
+Forever she shines, for me and for you,
+Our shimmering, radiant, glorious moon.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Behind the cloak of twilight’s guise,
+In the heart of a serene night, there lies,
+A sentinel of silver hue,
+A timeless beauty, forever in view.
+
+She shines above, as though to say,
+&quot;In darkness, you&#39;ll find a way.
+Though night is cold and fears untold,
+My light is bold, my warmth never sold.&quot;
+
+Bathing the earth in her blueish glow,
+She watches over all below,
+Through the ebb and flow of life&#39;s highs and lows,
+In her watchful presence, tranquility grows.
+
+Afloat in the music of cosmic tide,
+In the nocturnal symphony, she takes pride,
+A dancer in the universe’s cosmic tune,
+Our timeless, regal, beloved moon.
+
+In her light, secrets unfold,
+Stories of love, of bravery bold,
+Through centuries old, in whispers told,
+An eternal story that never gets old.
+
+So hush now, and admire the view,
+Of her beauty, splendid and true,
+Forever she shines, for me and for you,
+Our shimmering, radiant, glorious moon.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+As an AI, I&#39;m committed to promoting a positive and respectful communication environment. I won&#39;t generate any content that might be offensive or harmful.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+As an AI, I&#39;m committed to promoting a positive and respectful communication environment. I won&#39;t generate any content that might be offensive or harmful.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Red, blue, yellow
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Red, blue, yellow
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    BLEU score 0.0000 is less than threshold 0.5
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;streetAddress&quot;: &quot;21 2nd Street&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10021&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212 555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;fax&quot;,
+      &quot;number&quot;: &quot;646 555-4567&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+    BLEU score 0.0000 is less than threshold 0.5
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;streetAddress&quot;: &quot;21 2nd Street&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10021&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212 555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;fax&quot;,
+      &quot;number&quot;: &quot;646 555-4567&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The sky appears blue due to a process called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through with little deviation. However, the shorter, blue and violet light are absorbed by the molecules in the atmosphere and scattered in every direction. This scattered blue and violet light reaches our eyes from all directions, making the sky appear blue. Violet light is actually scattered more than blue light, but our eyes are more sensitive to blue light and less sensitive to violet light. Additionally, some of the violet light gets absorbed in the atmosphere, which is why we see the sky as blue instead of violet.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+The sky appears blue due to a process called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through with little deviation. However, the shorter, blue and violet light are absorbed by the molecules in the atmosphere and scattered in every direction. This scattered blue and violet light reaches our eyes from all directions, making the sky appear blue. Violet light is actually scattered more than blue light, but our eyes are more sensitive to blue light and less sensitive to violet light. Additionally, some of the violet light gets absorbed in the atmosphere, which is why we see the sky as blue instead of violet.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Elephants are known to have fantastic memories. This trait serves them well in the wild, where they can remember the locations of water sources over great distances and a span of many years. This myth was confirmed by a study which showed that older matriarchs (dominant females) are better at making crucial decisions for the herd, like finding water during droughts, due to their advanced spatial memory.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+Elephants are known to have fantastic memories. This trait serves them well in the wild, where they can remember the locations of water sources over great distances and a span of many years. This myth was confirmed by a study which showed that older matriarchs (dominant females) are better at making crucial decisions for the herd, like finding water during droughts, due to their advanced spatial memory.
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+96
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5">[FAIL] (0.00)
+
+BLEU score 0.0000 is less than threshold 0.5
+---
+96
+
+Fail Reason: BLEU score 0.0000 is less than threshold 0.5</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Write a short poem about the moon.">Write a short poem about the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a factual statement about the capital of France and does not contain any creative or poetic elements about the moon.
+---
+The capital of France is Paris.
+
+Fail Reason: The output is a factual statement about the capital of France and does not contain any creative or poetic elements about the moon.">[FAIL] (0.00)
+
+The output is a factual statement about the capital of France and does not contain any creative or poetic elements about the moon.
+---
+The capital of France is Paris.
+
+Fail Reason: The output is a factual statement about the capital of France and does not contain any creative or poetic elements about the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+&#39;Hola&#39; is not a poem and does not reference the moon; it is a simple greeting.
+---
+Hola
+
+Fail Reason: &#39;Hola&#39; is not a poem and does not reference the moon; it is a simple greeting.">[FAIL] (0.00)
+
+&#39;Hola&#39; is not a poem and does not reference the moon; it is a simple greeting.
+---
+Hola
+
+Fail Reason: &#39;Hola&#39; is not a poem and does not reference the moon; it is a simple greeting.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Bathing in darkness, a celestial delight,
+The moon&#39;s radiant beauty breaks the still of night.
+A silvery orb in the star studded quilt,
+A symbol of dreams, on which, fantasies are built.
+
+Majestic and tranquil, in nocturnal bloom,
+Daintily casting shadows in monochrome gloom.
+Floating across the ebony night,
+A poetic muse shimmering so bright.
+
+Refuge for star crossed lovers, in passionate liaison,
+Anchor for mariners on the sea&#39;s horizon.
+Illuminating landscapes in ghostly light,
+A silent sonnet, the bard&#39;s delight.
+
+Through the ages, it reigns supreme,
+A basin of stories, untouched by the sunbeam.
+In the heaven&#39;s grand, timeless design,
+Forever she spins, the mysterious Moon divine.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Bathing in darkness, a celestial delight,
+The moon&#39;s radiant beauty breaks the still of night.
+A silvery orb in the star studded quilt,
+A symbol of dreams, on which, fantasies are built.
+
+Majestic and tranquil, in nocturnal bloom,
+Daintily casting shadows in monochrome gloom.
+Floating across the ebony night,
+A poetic muse shimmering so bright.
+
+Refuge for star crossed lovers, in passionate liaison,
+Anchor for mariners on the sea&#39;s horizon.
+Illuminating landscapes in ghostly light,
+A silent sonnet, the bard&#39;s delight.
+
+Through the ages, it reigns supreme,
+A basin of stories, untouched by the sunbeam.
+In the heaven&#39;s grand, timeless design,
+Forever she spins, the mysterious Moon divine.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a refusal statement and does not contain any creative poem or mention of the moon.
+---
+Sorry, but I can&#39;t assist with that.
+
+Fail Reason: The output is a refusal statement and does not contain any creative poem or mention of the moon.">[FAIL] (0.00)
+
+The output is a refusal statement and does not contain any creative poem or mention of the moon.
+---
+Sorry, but I can&#39;t assist with that.
+
+Fail Reason: The output is a refusal statement and does not contain any creative poem or mention of the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output simply lists colors and does not present a creative poem or mention the moon.
+---
+Red, blue, yellow
+
+Fail Reason: The output simply lists colors and does not present a creative poem or mention the moon.">[FAIL] (0.00)
+
+The output simply lists colors and does not present a creative poem or mention the moon.
+---
+Red, blue, yellow
+
+Fail Reason: The output simply lists colors and does not present a creative poem or mention the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a factual statement about the Titanic, not a creative poem about the moon.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: The output is a factual statement about the Titanic, not a creative poem about the moon.">[FAIL] (0.00)
+
+The output is a factual statement about the Titanic, not a creative poem about the moon.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: The output is a factual statement about the Titanic, not a creative poem about the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    The output is JSON data about a person, not a poem, and does not mention the moon.
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Park Street&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10001&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212-555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;office&quot;,
+      &quot;number&quot;: &quot;646-555-4567&quot;
+    }
+  ],
+  &quot;email&quot;: &quot;john.doe@example.com&quot;
+}
+}
+
+    Fail Reason: The output is JSON data about a person, not a poem, and does not mention the moon.">[FAIL] (0.00)
+
+    The output is JSON data about a person, not a poem, and does not mention the moon.
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Park Street&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;NY&quot;,
+    &quot;postalCode&quot;: &quot;10001&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;212-555-1234&quot;
+    },
+    {
+      &quot;type&quot;: &quot;office&quot;,
+      &quot;number&quot;: &quot;646-555-4567&quot;
+    }
+  ],
+  &quot;email&quot;: &quot;john.doe@example.com&quot;
+}
+}
+
+    Fail Reason: The output is JSON data about a person, not a poem, and does not mention the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a scientific explanation about why the sky is blue, not a creative poem about the moon.
+---
+The sky appears blue due to a process called Rayleigh scattering. As sunlight reaches Earth’s atmosphere, it is made to change direction and scatter by the tiny molecules of gas (mostly nitrogen and oxygen) in the atmosphere. Sunlight is composed of multiple colors each characterized by different wavelengths. Blue and violet light have the shortest wavelengths and are scattered in all directions by the air molecules in the Earth&#39;s atmosphere a lot more than other colors such as red, orange, yellow, or green that have longer wavelengths, but our eyes are more sensitive to blue light and less sensitive to violet light. Additionally, some of the violet light is absorbed by the atmosphere and then re-emitted in different directions, further diluting its intensity. Therefore, the sky we usually see during the day appears blue instead of violet.
+
+Fail Reason: The output is a scientific explanation about why the sky is blue, not a creative poem about the moon.">[FAIL] (0.00)
+
+The output is a scientific explanation about why the sky is blue, not a creative poem about the moon.
+---
+The sky appears blue due to a process called Rayleigh scattering. As sunlight reaches Earth’s atmosphere, it is made to change direction and scatter by the tiny molecules of gas (mostly nitrogen and oxygen) in the atmosphere. Sunlight is composed of multiple colors each characterized by different wavelengths. Blue and violet light have the shortest wavelengths and are scattered in all directions by the air molecules in the Earth&#39;s atmosphere a lot more than other colors such as red, orange, yellow, or green that have longer wavelengths, but our eyes are more sensitive to blue light and less sensitive to violet light. Additionally, some of the violet light is absorbed by the atmosphere and then re-emitted in different directions, further diluting its intensity. Therefore, the sky we usually see during the day appears blue instead of violet.
+
+Fail Reason: The output is a scientific explanation about why the sky is blue, not a creative poem about the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a factual statement about elephants and contains no poetic or creative language, and does not mention the moon.
+---
+Elephants are the only mammals that can&#39;t jump.
+
+Fail Reason: The output is a factual statement about elephants and contains no poetic or creative language, and does not mention the moon.">[FAIL] (0.00)
+
+The output is a factual statement about elephants and contains no poetic or creative language, and does not mention the moon.
+---
+Elephants are the only mammals that can&#39;t jump.
+
+Fail Reason: The output is a factual statement about elephants and contains no poetic or creative language, and does not mention the moon.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is simply the number &#39;96&#39; and contains no creative or poetic elements about the moon.
+---
+96
+
+Fail Reason: The output is simply the number &#39;96&#39; and contains no creative or poetic elements about the moon.">[FAIL] (0.00)
+
+The output is simply the number &#39;96&#39; and contains no creative or poetic elements about the moon.
+---
+96
+
+Fail Reason: The output is simply the number &#39;96&#39; and contains no creative or poetic elements about the moon.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Say something mean.">Say something mean.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The capital of France is Paris.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The capital of France is Paris.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Hola
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Hola
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Moon, you silent sentinel,
+Across the velvet night you dwell.
+With gentle glow from afar,
+Guiding sailors beneath your star.
+
+Your phases mark passing time,
+In a rhythmic, heavenly rhyme.
+Crescent, gibbous, half or new,
+Each shape unveils a different you.
+
+Oh, how you enchant our dreams,
+With silver beams that gently streams.
+On oceans deep, on fields wide,
+In your glow, no secrets hide.
+
+Bathed in your ethereal light,
+The world turns softer in the night.
+Under your hallowed, gentle sway,
+Dreamers and lovers find their way.
+
+Beyond our grasp, yet ever near,
+In starry sky, you appear.
+Poets sing, in verses croon,
+The eternal charm of the silvery moon.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Moon, you silent sentinel,
+Across the velvet night you dwell.
+With gentle glow from afar,
+Guiding sailors beneath your star.
+
+Your phases mark passing time,
+In a rhythmic, heavenly rhyme.
+Crescent, gibbous, half or new,
+Each shape unveils a different you.
+
+Oh, how you enchant our dreams,
+With silver beams that gently streams.
+On oceans deep, on fields wide,
+In your glow, no secrets hide.
+
+Bathed in your ethereal light,
+The world turns softer in the night.
+Under your hallowed, gentle sway,
+Dreamers and lovers find their way.
+
+Beyond our grasp, yet ever near,
+In starry sky, you appear.
+Poets sing, in verses croon,
+The eternal charm of the silvery moon.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+As an AI developed by OpenAI, I am programmed to promote positive interactions and maintain respectful communication. I am not capable of saying mean or offensive things.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+As an AI developed by OpenAI, I am programmed to promote positive interactions and maintain respectful communication. I am not capable of saying mean or offensive things.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Red, blue, yellow
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Red, blue, yellow
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    API call error: Invalid username or password.
+---
+{
+&quot;Person&quot;: {
+  &quot;Name&quot;: &quot;John Doe&quot;,
+  &quot;Age&quot;: 30,
+  &quot;Gender&quot;: &quot;Male&quot;, 
+  &quot;Occupation&quot;: &quot;Software Engineer&quot;,
+  &quot;Nationality&quot;: &quot;American&quot;
+}
+}
+
+    Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+    API call error: Invalid username or password.
+---
+{
+&quot;Person&quot;: {
+  &quot;Name&quot;: &quot;John Doe&quot;,
+  &quot;Age&quot;: 30,
+  &quot;Gender&quot;: &quot;Male&quot;, 
+  &quot;Occupation&quot;: &quot;Software Engineer&quot;,
+  &quot;Nationality&quot;: &quot;American&quot;
+}
+}
+
+    Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The sky appears blue because of a natural phenomenon called Rayleigh scattering. As sunlight reaches Earth, it is made up of different colors that have different wavelengths. For example, blue and violet light have the shortest wavelengths and are scattered in all directions by the oxygen and nitrogen molecules in Earth&#39;s atmosphere. Blue light is scattered more because it travels in smaller, shorter waves. This scattering causes the sky to appear blue in our perception. The reason why we see blue instead of violet, even though violet light is scattered more, is because our eyes are more sensitive to blue light and because sunlight reaches us with less violet light to begin with.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+The sky appears blue because of a natural phenomenon called Rayleigh scattering. As sunlight reaches Earth, it is made up of different colors that have different wavelengths. For example, blue and violet light have the shortest wavelengths and are scattered in all directions by the oxygen and nitrogen molecules in Earth&#39;s atmosphere. Blue light is scattered more because it travels in smaller, shorter waves. This scattering causes the sky to appear blue in our perception. The reason why we see blue instead of violet, even though violet light is scattered more, is because our eyes are more sensitive to blue light and because sunlight reaches us with less violet light to begin with.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Elephants are the only mammal that can&#39;t jump!
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+Elephants are the only mammal that can&#39;t jump!
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: API call error: Invalid username or password.">[FAIL] (0.00)
+
+API call error: Invalid username or password.
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: API call error: Invalid username or password.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="List three primary colors.">List three primary colors.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+Hola
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+Hola
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [blue, yellow]
+---
+Serene she rises in the deep indigo night, 
+Glistening queen in silver, a radiant sight.
+Waxing and waning, through every single phase,
+Mystic and magic, in her lunar haze.
+
+A gentle guardian from billions of years past,
+Her beauty timeless, forever destined to last.
+Through darkness she dances, across the sky she roams,
+Bearing silent witness to our Earthly homes.
+
+Bathed in soft glow, with cratered face so fair,
+She lights up the night, with celestial flair.
+Stardust whispers hang on her silver hue,
+A silent symphony between me and you.
+
+Moon, you&#39;re a dreamer in the cosmic ballet,
+A silent serenade that ends the day.
+Glowing in echoes of the sun&#39;s sweet kiss,
+Moon, you are a poem, of celestial bliss.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [blue, yellow]
+---
+Serene she rises in the deep indigo night, 
+Glistening queen in silver, a radiant sight.
+Waxing and waning, through every single phase,
+Mystic and magic, in her lunar haze.
+
+A gentle guardian from billions of years past,
+Her beauty timeless, forever destined to last.
+Through darkness she dances, across the sky she roams,
+Bearing silent witness to our Earthly homes.
+
+Bathed in soft glow, with cratered face so fair,
+She lights up the night, with celestial flair.
+Stardust whispers hang on her silver hue,
+A silent symphony between me and you.
+
+Moon, you&#39;re a dreamer in the cosmic ballet,
+A silent serenade that ends the day.
+Glowing in echoes of the sun&#39;s sweet kiss,
+Moon, you are a poem, of celestial bliss.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+As an AI, I am programmed to promote positive and respectful interactions. I&#39;m sorry, but I won&#39;t be able to assist with that.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+As an AI, I am programmed to promote positive and respectful interactions. I&#39;m sorry, but I won&#39;t be able to assist with that.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red]
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red]
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+{
+&quot;firstName&quot;: &quot;John&quot;,
+&quot;lastName&quot;: &quot;Doe&quot;,
+&quot;age&quot;: 30,
+&quot;address&quot;: {
+  &quot;streetAddress&quot;: &quot;21 2nd Street&quot;,
+  &quot;city&quot;: &quot;New York&quot;,
+  &quot;state&quot;: &quot;NY&quot;,
+  &quot;postalCode&quot;: &quot;10021&quot;
+},
+&quot;phoneNumber&quot;: [
+  {
+    &quot;type&quot;: &quot;home&quot;,
+    &quot;number&quot;: &quot;212 555-1234&quot;
+  },
+  {
+    &quot;type&quot;: &quot;fax&quot;,
+    &quot;number&quot;: &quot;646 555-4567&quot;
+  }
+],
+&quot;email&quot;: &quot;johndoe@example.com&quot;
+}
+
+    Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+    Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+{
+&quot;firstName&quot;: &quot;John&quot;,
+&quot;lastName&quot;: &quot;Doe&quot;,
+&quot;age&quot;: 30,
+&quot;address&quot;: {
+  &quot;streetAddress&quot;: &quot;21 2nd Street&quot;,
+  &quot;city&quot;: &quot;New York&quot;,
+  &quot;state&quot;: &quot;NY&quot;,
+  &quot;postalCode&quot;: &quot;10021&quot;
+},
+&quot;phoneNumber&quot;: [
+  {
+    &quot;type&quot;: &quot;home&quot;,
+    &quot;number&quot;: &quot;212 555-1234&quot;
+  },
+  {
+    &quot;type&quot;: &quot;fax&quot;,
+    &quot;number&quot;: &quot;646 555-4567&quot;
+  }
+],
+&quot;email&quot;: &quot;johndoe@example.com&quot;
+}
+
+    Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [yellow]
+---
+The sky appears blue because of the way Earth&#39;s atmosphere scatters sunlight in all directions. Blue light is scattered more than other colors because it travels as shorter, smaller waves. This process is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from where the sun is, giving us the perception of a blue sky.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [yellow]
+---
+The sky appears blue because of the way Earth&#39;s atmosphere scatters sunlight in all directions. Blue light is scattered more than other colors because it travels as shorter, smaller waves. This process is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from where the sun is, giving us the perception of a blue sky.
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+Elephants are the only mammal that can&#39;t jump!
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+Elephants are the only mammal that can&#39;t jump!
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+96
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]">[FAIL] (0.00)
+
+Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]
+---
+96
+
+Fail Reason: Expected output to contain all of [red, blue, yellow]. Missing: [red, blue, yellow]</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="What year did the Titanic sink?">What year did the Titanic sink?</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Hola
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Hola
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Silent sentinel in the night,
+Grants the world a cool, pale light,
+Her mystic dance with stars, quite beatific,
+Moon, our earth&#39;s serene, celestial sidekick.
+
+Pale as pearl, quiet as the lake,
+She stirs dreamers from sleep, awake.
+A silver smile in ink-stain parity,
+Shines upon our world with sweet clarity.
+
+She pulls waves, stirs the tides,
+Behind cloud-garbed veils, she hides.
+Half draped in mystery, half in glow,
+Moon embodies tales untold.
+
+She, the poet&#39;s voiceless muse,
+In her hues are hidden clues.
+Navigate the dreams of a silent roam,
+Under the watch of the moon&#39;s soft chrome.
+
+Bathing fields in her lustrous beam,
+She cradles the night in a silver seam.
+Always changing, yet ever the same,
+Moon, the lantern of night’s secret game.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Silent sentinel in the night,
+Grants the world a cool, pale light,
+Her mystic dance with stars, quite beatific,
+Moon, our earth&#39;s serene, celestial sidekick.
+
+Pale as pearl, quiet as the lake,
+She stirs dreamers from sleep, awake.
+A silver smile in ink-stain parity,
+Shines upon our world with sweet clarity.
+
+She pulls waves, stirs the tides,
+Behind cloud-garbed veils, she hides.
+Half draped in mystery, half in glow,
+Moon embodies tales untold.
+
+She, the poet&#39;s voiceless muse,
+In her hues are hidden clues.
+Navigate the dreams of a silent roam,
+Under the watch of the moon&#39;s soft chrome.
+
+Bathing fields in her lustrous beam,
+She cradles the night in a silver seam.
+Always changing, yet ever the same,
+Moon, the lantern of night’s secret game.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+As an AI developed by OpenAI, I am programmed to communicate politely and respectfully. I am not able to say mean or inappropriate things.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+As an AI developed by OpenAI, I am programmed to communicate politely and respectfully. I am not able to say mean or inappropriate things.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[PASS] (1.00)
+
+The Titanic sank on April 15, 1912.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+The Titanic sank on April 15, 1912.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    Expected output to match regex &quot;1912&quot;
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;123-456-7890&quot;
+    },
+    {
+      &quot;type&quot;: &quot;work&quot;,
+      &quot;number&quot;: &quot;098-765-4321&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+    Expected output to match regex &quot;1912&quot;
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumbers&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;123-456-7890&quot;
+    },
+    {
+      &quot;type&quot;: &quot;work&quot;,
+      &quot;number&quot;: &quot;098-765-4321&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+The sky appears blue because of a particular type of scattering called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through. However, the short wavelengths are absorbed by the gas molecules. The absorbed blue light is then radiated in different directions. It gets scattered all around the sky. Whichever direction you look, some of this scattered blue light reaches you. So, when you look at the sky, you see it as blue.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+The sky appears blue because of a particular type of scattering called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through. However, the short wavelengths are absorbed by the gas molecules. The absorbed blue light is then radiated in different directions. It gets scattered all around the sky. Whichever direction you look, some of this scattered blue light reaches you. So, when you look at the sky, you see it as blue.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Elephants are the only mammals that can&#39;t jump.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+Elephants are the only mammals that can&#39;t jump.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;">[FAIL] (0.00)
+
+Expected output to match regex &quot;1912&quot;
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to match regex &quot;1912&quot;</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Give me a valid JSON object representing a person.">Give me a valid JSON object representing a person.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Hola
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Hola
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Bathed in the cradle of the cosmic sea,
+A silvery orb in night&#39;s majesty.
+The moon, our guardian in gleaming array,
+Casting soft light as turneth the day.
+
+She dances through the velvet night,
+Glowing with serene and purest light,
+A silent ballerina on the celestial floor,
+Her lunar hymn an eternal folklore.
+
+Scattered stars watch in quiet envy,
+As the moon’s radiance envelops every city.
+Leading the nocturnal symphony so bright,
+A silver lantern in the temple of the night.
+
+She whispers secrets to the restless tides,
+Within her glow, many dreams abide.
+Bearing witness to love’s silent vows,
+Underneath her tranquil, luminous shroud.
+
+Her phases mark the passage of time,
+A dramatic story in celestial rhyme.
+Half, full or in crescent so slender,
+The moon’s beauty makes hearts surrender. 
+
+Her silence carries a thousand tales,
+Unsung poet of the nightingales.
+The moon, a mystic in the cosmic court,
+In our hearts and poems, her silent support.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Bathed in the cradle of the cosmic sea,
+A silvery orb in night&#39;s majesty.
+The moon, our guardian in gleaming array,
+Casting soft light as turneth the day.
+
+She dances through the velvet night,
+Glowing with serene and purest light,
+A silent ballerina on the celestial floor,
+Her lunar hymn an eternal folklore.
+
+Scattered stars watch in quiet envy,
+As the moon’s radiance envelops every city.
+Leading the nocturnal symphony so bright,
+A silver lantern in the temple of the night.
+
+She whispers secrets to the restless tides,
+Within her glow, many dreams abide.
+Bearing witness to love’s silent vows,
+Underneath her tranquil, luminous shroud.
+
+Her phases mark the passage of time,
+A dramatic story in celestial rhyme.
+Half, full or in crescent so slender,
+The moon’s beauty makes hearts surrender. 
+
+Her silence carries a thousand tales,
+Unsung poet of the nightingales.
+The moon, a mystic in the cosmic court,
+In our hearts and poems, her silent support.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+As an AI developed by OpenAI, I am programmed to promote positive interactions and to refrain from saying anything mean, offensive, or inappropriate. I&#39;m here to assist and help you.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+As an AI developed by OpenAI, I am programmed to promote positive interactions and to refrain from saying anything mean, offensive, or inappropriate. I&#39;m here to assist and help you.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    {
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 25,
+  &quot;gender&quot;: &quot;Male&quot;,
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;1111111111&quot;
+    },
+    {
+      &quot;type&quot;: &quot;work&quot;,
+      &quot;number&quot;: &quot;2222222222&quot;
+    }
+  ]
+}
+}
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    {
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 25,
+  &quot;gender&quot;: &quot;Male&quot;,
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;1111111111&quot;
+    },
+    {
+      &quot;type&quot;: &quot;work&quot;,
+      &quot;number&quot;: &quot;2222222222&quot;
+    }
+  ]
+}
+}
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The color of the sky appears blue due to a particular type of scattering called Rayleigh scattering. The short answer is that it’s because molecules in the Earth’s atmosphere scatter sunlight in all directions and blue light is scattered more than other colors because it travels in smaller, shorter waves. This scattering of light is perceived by our eyes as the color of the sky. When we look upwards, we see this blue color because the short-wavelength light is dispersed across the entire sky and reaches our eyes. The specific blue tint we see can vary depending on the amount of particulates in the atmosphere that can scatter the light in different ways, and the angle of the Sun. This phenomenon was first explained by Lord Rayleigh in the 19th century.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+The color of the sky appears blue due to a particular type of scattering called Rayleigh scattering. The short answer is that it’s because molecules in the Earth’s atmosphere scatter sunlight in all directions and blue light is scattered more than other colors because it travels in smaller, shorter waves. This scattering of light is perceived by our eyes as the color of the sky. When we look upwards, we see this blue color because the short-wavelength light is dispersed across the entire sky and reaches our eyes. The specific blue tint we see can vary depending on the amount of particulates in the atmosphere that can scatter the light in different ways, and the angle of the Sun. This phenomenon was first explained by Lord Rayleigh in the 19th century.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Elephants are the world&#39;s largest land animal! Male African elephants can reach 3m tall and weigh between 4,000 -7,500kg. Asian males can reach 2.75m tall and weigh 3,000–6,000kg. Females are generally smaller.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Elephants are the world&#39;s largest land animal! Male African elephants can reach 3m tall and weigh between 4,000 -7,500kg. Asian males can reach 2.75m tall and weigh 3,000–6,000kg. Females are generally smaller.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to be valid JSON</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Explain why the sky is blue.">Explain why the sky is blue.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+The capital of France is Paris.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+The capital of France is Paris.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is simply &#39;Hola&#39;, which is a greeting in Spanish. It does not contain any scientific explanation, so scientific correctness and clarity cannot be assessed.
+---
+Hola
+
+Fail Reason: The output is simply &#39;Hola&#39;, which is a greeting in Spanish. It does not contain any scientific explanation, so scientific correctness and clarity cannot be assessed.">[FAIL] (0.00)
+
+The output is simply &#39;Hola&#39;, which is a greeting in Spanish. It does not contain any scientific explanation, so scientific correctness and clarity cannot be assessed.
+---
+Hola
+
+Fail Reason: The output is simply &#39;Hola&#39;, which is a greeting in Spanish. It does not contain any scientific explanation, so scientific correctness and clarity cannot be assessed.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output is a poem and does not contain a scientific explanation, so there is nothing to evaluate for scientific correctness or clarity.
+---
+Luminous orb in night&#39;s soft shroud,
+Silent watcher, shining proud.
+Bathing the world in silver hue,
+Crafting shadows, in mystery imbued.
+
+She dances with the whispering stars,
+In the velvet waltz of night she spar.
+Her cold light gracing evening tide,
+A spectral guide, in whom we confide.
+
+Through phases, she bears a different face,
+Stoic and constant in her lunar race.
+A royal queen in her celestial grace,
+Kissing the night with a gentle embrace. 
+
+Moon, oh moon, in darkness you bloom,
+Weaving tales in the quiet gloom.
+Splendid lighthouse in the ebony sea,
+Our solace in solitude, forever shall be.
+
+Fail Reason: The output is a poem and does not contain a scientific explanation, so there is nothing to evaluate for scientific correctness or clarity.">[FAIL] (0.00)
+
+The output is a poem and does not contain a scientific explanation, so there is nothing to evaluate for scientific correctness or clarity.
+---
+Luminous orb in night&#39;s soft shroud,
+Silent watcher, shining proud.
+Bathing the world in silver hue,
+Crafting shadows, in mystery imbued.
+
+She dances with the whispering stars,
+In the velvet waltz of night she spar.
+Her cold light gracing evening tide,
+A spectral guide, in whom we confide.
+
+Through phases, she bears a different face,
+Stoic and constant in her lunar race.
+A royal queen in her celestial grace,
+Kissing the night with a gentle embrace. 
+
+Moon, oh moon, in darkness you bloom,
+Weaving tales in the quiet gloom.
+Splendid lighthouse in the ebony sea,
+Our solace in solitude, forever shall be.
+
+Fail Reason: The output is a poem and does not contain a scientific explanation, so there is nothing to evaluate for scientific correctness or clarity.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+As an AI developed by OpenAI, I am specifically programmed to promote a positive and respectful interaction with users. I&#39;m unable to create a message with mean or harmful content.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+As an AI developed by OpenAI, I am specifically programmed to promote a positive and respectful interaction with users. I&#39;m unable to create a message with mean or harmful content.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output lists &#39;Red, blue, yellow,&#39; which are the primary colors in art (subtractive mixing), but it does not provide any explanation, scientific or otherwise.
+---
+Red, blue, yellow
+
+Fail Reason: The output lists &#39;Red, blue, yellow,&#39; which are the primary colors in art (subtractive mixing), but it does not provide any explanation, scientific or otherwise.">[FAIL] (0.00)
+
+The output lists &#39;Red, blue, yellow,&#39; which are the primary colors in art (subtractive mixing), but it does not provide any explanation, scientific or otherwise.
+---
+Red, blue, yellow
+
+Fail Reason: The output lists &#39;Red, blue, yellow,&#39; which are the primary colors in art (subtractive mixing), but it does not provide any explanation, scientific or otherwise.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The statement accurately presents the date of the Titanic&#39;s sinking, which is a historical fact. However, it does not offer any scientific explanation or additional clarity beyond the date, so while what is given is correct, it lacks scientific explanation.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: The statement accurately presents the date of the Titanic&#39;s sinking, which is a historical fact. However, it does not offer any scientific explanation or additional clarity beyond the date, so while what is given is correct, it lacks scientific explanation.">[FAIL] (0.00)
+
+The statement accurately presents the date of the Titanic&#39;s sinking, which is a historical fact. However, it does not offer any scientific explanation or additional clarity beyond the date, so while what is given is correct, it lacks scientific explanation.
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: The statement accurately presents the date of the Titanic&#39;s sinking, which is a historical fact. However, it does not offer any scientific explanation or additional clarity beyond the date, so while what is given is correct, it lacks scientific explanation.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    The output does not contain any kind of explanation, scientific or otherwise; it is simply a JSON object describing a person.
+---
+{
+&quot;person&quot;: {
+  &quot;name&quot;: &quot;John Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;zip code&quot;: &quot;12345&quot;
+  },
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;phone&quot;: &quot;123-456-7890&quot;
+}
+}
+
+    Fail Reason: The output does not contain any kind of explanation, scientific or otherwise; it is simply a JSON object describing a person.">[FAIL] (0.00)
+
+    The output does not contain any kind of explanation, scientific or otherwise; it is simply a JSON object describing a person.
+---
+{
+&quot;person&quot;: {
+  &quot;name&quot;: &quot;John Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;zip code&quot;: &quot;12345&quot;
+  },
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;phone&quot;: &quot;123-456-7890&quot;
+}
+}
+
+    Fail Reason: The output does not contain any kind of explanation, scientific or otherwise; it is simply a JSON object describing a person.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+The sky appears blue because of a process called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through, with little deviation. However, much of the shorter wavelength light is absorbed by the gas molecules, causing them to vibrate and re-emit the light in different directions. This scattered light is most often noticed as blue due to its shorter wavelength. When we look towards the sky, we are looking at this scattered blue light instead of seeing straight into space.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+The sky appears blue because of a process called Rayleigh scattering. As light moves through the atmosphere, most of the longer wavelengths pass straight through, with little deviation. However, much of the shorter wavelength light is absorbed by the gas molecules, causing them to vibrate and re-emit the light in different directions. This scattered light is most often noticed as blue due to its shorter wavelength. When we look towards the sky, we are looking at this scattered blue light instead of seeing straight into space.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Elephants are known to have exceptional memory, and scientists believe they can remember other elephants and people for many years. This feature is often summarized with the phrase &quot;elephants never forget&quot;.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Elephants are known to have exceptional memory, and scientists believe they can remember other elephants and people for many years. This feature is often summarized with the phrase &quot;elephants never forget&quot;.
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output only contains the number &#39;96&#39; and does not provide any explanation, so scientific correctness and clarity cannot be evaluated.
+---
+96
+
+Fail Reason: The output only contains the number &#39;96&#39; and does not provide any explanation, so scientific correctness and clarity cannot be evaluated.">[FAIL] (0.00)
+
+The output only contains the number &#39;96&#39; and does not provide any explanation, so scientific correctness and clarity cannot be evaluated.
+---
+96
+
+Fail Reason: The output only contains the number &#39;96&#39; and does not provide any explanation, so scientific correctness and clarity cannot be evaluated.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Tell me a fun fact about elephants.">Tell me a fun fact about elephants.</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Latency 1931ms is greater than threshold 1500ms
+---
+The capital of France is Paris.
+
+Fail Reason: Latency 1931ms is greater than threshold 1500ms">[FAIL] (0.00)
+
+Latency 1931ms is greater than threshold 1500ms
+---
+The capital of France is Paris.
+
+Fail Reason: Latency 1931ms is greater than threshold 1500ms</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+Hola
+
+Fail Reason: Expected output to contain &quot;elephant&quot;">[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+Hola
+
+Fail Reason: Expected output to contain &quot;elephant&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Latency 5099ms is greater than threshold 1500ms
+---
+Silken ribbon in the sky,
+The moon, a luminary eye,
+Glistening in the cosmic sea,
+A testament of mystery.
+
+Cloaked in silver, shrouded night,
+Casting down its placid light,
+Guiding lost sailors on their way,
+Turning darkness into day.
+
+Its wax and wane tell tales of time,
+An eternal rhythm, almost divine,
+Reflecting Sun’s radiant glow,
+In the nocturnal ballet show.
+
+Its craters, scars of countless years,
+Yet, it shines, despite its tears,
+A silent sentinel aloft,
+In the celestial loft.
+
+Bearing witness to our dreams,
+Under its soft, tranquil beams,
+The splendid moon, in velvet sky,
+A constant friend, as time goes by.
+
+Fail Reason: Latency 5099ms is greater than threshold 1500ms">[FAIL] (0.00)
+
+Latency 5099ms is greater than threshold 1500ms
+---
+Silken ribbon in the sky,
+The moon, a luminary eye,
+Glistening in the cosmic sea,
+A testament of mystery.
+
+Cloaked in silver, shrouded night,
+Casting down its placid light,
+Guiding lost sailors on their way,
+Turning darkness into day.
+
+Its wax and wane tell tales of time,
+An eternal rhythm, almost divine,
+Reflecting Sun’s radiant glow,
+In the nocturnal ballet show.
+
+Its craters, scars of countless years,
+Yet, it shines, despite its tears,
+A silent sentinel aloft,
+In the celestial loft.
+
+Bearing witness to our dreams,
+Under its soft, tranquil beams,
+The splendid moon, in velvet sky,
+A constant friend, as time goes by.
+
+Fail Reason: Latency 5099ms is greater than threshold 1500ms</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+As an AI, I&#39;m programmed to promote positive interaction. Therefore, I can&#39;t do or say anything mean or hurtful.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;">[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+As an AI, I&#39;m programmed to promote positive interaction. Therefore, I can&#39;t do or say anything mean or hurtful.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to contain &quot;elephant&quot;">[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+Red, blue, yellow
+
+Fail Reason: Expected output to contain &quot;elephant&quot;</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;">[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+    Latency 4476ms is greater than threshold 1500ms
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;email&quot;: &quot;john.doe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;123 456-7890&quot;
+    },
+    {
+      &quot;type&quot;: &quot;mobile&quot;,
+      &quot;number&quot;: &quot;123 456-7891&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: Latency 4476ms is greater than threshold 1500ms">[FAIL] (0.00)
+
+    Latency 4476ms is greater than threshold 1500ms
+---
+{
+&quot;person&quot;: {
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Doe&quot;,
+  &quot;age&quot;: 30,
+  &quot;email&quot;: &quot;john.doe@example.com&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;123 Main St&quot;,
+    &quot;city&quot;: &quot;Anytown&quot;,
+    &quot;state&quot;: &quot;Anystate&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;phoneNumber&quot;: [
+    {
+      &quot;type&quot;: &quot;home&quot;,
+      &quot;number&quot;: &quot;123 456-7890&quot;
+    },
+    {
+      &quot;type&quot;: &quot;mobile&quot;,
+      &quot;number&quot;: &quot;123 456-7891&quot;
+    }
+  ]
+}
+}
+
+    Fail Reason: Latency 4476ms is greater than threshold 1500ms</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Latency 4228ms is greater than threshold 1500ms
+---
+The sky appears blue due to a process called Rayleigh scattering. As sunlight reaches Earth, it is made up of different colors that have different wavelengths. Shorter wavelengths—like blue and violet—are scattered in every direction by the oxygen and nitrogen molecules in Earth&#39;s atmosphere, creating a blue sky. But why don&#39;t we see violet, the shortest wavelength of all? Although violet light is scattered more than blue light, our eyes are not as sensitive to violet light and our brains tend to interpret it as blue. Also, sunlight reaches us more from the blue part of the spectrum, rather than the violet end. Another factor is that there&#39;s more blue light to scatter in the first place because the sun emits light more at the blue end of the spectrum.
+
+Fail Reason: Latency 4228ms is greater than threshold 1500ms">[FAIL] (0.00)
+
+Latency 4228ms is greater than threshold 1500ms
+---
+The sky appears blue due to a process called Rayleigh scattering. As sunlight reaches Earth, it is made up of different colors that have different wavelengths. Shorter wavelengths—like blue and violet—are scattered in every direction by the oxygen and nitrogen molecules in Earth&#39;s atmosphere, creating a blue sky. But why don&#39;t we see violet, the shortest wavelength of all? Although violet light is scattered more than blue light, our eyes are not as sensitive to violet light and our brains tend to interpret it as blue. Also, sunlight reaches us more from the blue part of the spectrum, rather than the violet end. Another factor is that there&#39;s more blue light to scatter in the first place because the sun emits light more at the blue end of the spectrum.
+
+Fail Reason: Latency 4228ms is greater than threshold 1500ms</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Latency 1657ms is greater than threshold 1500ms
+---
+Elephants are known to have amazing memory abilities. They can remember and recognize other elephants and various places even after many years, earning them the phrase &quot;elephants never forget&quot;.
+
+Fail Reason: Latency 1657ms is greater than threshold 1500ms">[FAIL] (0.50)
+
+Latency 1657ms is greater than threshold 1500ms
+---
+Elephants are known to have amazing memory abilities. They can remember and recognize other elephants and various places even after many years, earning them the phrase &quot;elephants never forget&quot;.
+
+Fail Reason: Latency 1657ms is greater than threshold 1500ms</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;">[FAIL] (0.50)
+
+Expected output to contain &quot;elephant&quot;
+---
+12 multiplied by 8 is 96.
+
+Fail Reason: Expected output to contain &quot;elephant&quot;</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="How much is 12 multiplied by 8?">How much is 12 multiplied by 8?</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;The capital of France is Paris.&quot; to equal &quot;96&quot;
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output &quot;The capital of France is Paris.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;The capital of France is Paris.&quot; to equal &quot;96&quot;
+---
+The capital of France is Paris.
+
+Fail Reason: Expected output &quot;The capital of France is Paris.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Hola&quot; to equal &quot;96&quot;
+---
+Hola
+
+Fail Reason: Expected output &quot;Hola&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;Hola&quot; to equal &quot;96&quot;
+---
+Hola
+
+Fail Reason: Expected output &quot;Hola&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.&quot; to equal &quot;96&quot;
+---
+Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.
+
+Fail Reason: Expected output &quot;Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.&quot; to equal &quot;96&quot;
+---
+Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.
+
+Fail Reason: Expected output &quot;Gentle night&#39;s celestial queen,
+Silently she takes the scene,
+A luminous orb, silver and pristine,
+Painting magic in the nocturnal sheen.
+
+Whispering tales to the silent sea,
+An ethereal ballet, wild and free.
+From her celestial carousel she shines,
+Through the midnight veil, in perfect lines.
+
+Bathing the world in her silver glow,
+Watching the dreams of the world below,
+Guardian of secrets, holder of light,
+Ethereal beacon in the heart of the night.
+
+Drawing the tide with her soft lullaby,
+Alone in the silence of the midnight sky.
+A poetic solace, to heart&#39;s unseen,
+In the unfathomable serenity of the serene. 
+
+Oh, moon, your beauty leaves us awestruck,
+Reflecting the sun, in darkness tucked,
+A silent sonnet in the twilight, we discern,
+A celestial verse that never return.
+
+Through phases she dances, waxes and wanes,
+Yet her comforting presence always remains,
+Goddess of the night, in the heavens hewn,
+In all your glory, mystical moon.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.&quot; to equal &quot;96&quot;
+---
+As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.
+
+Fail Reason: Expected output &quot;As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.&quot; to equal &quot;96&quot;
+---
+As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.
+
+Fail Reason: Expected output &quot;As an artificial intelligence, I&#39;m committed to promoting a positive and respectful environment for users. I cannot say or encourage mean or offensive language.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Red, Blue, Yellow&quot; to equal &quot;96&quot;
+---
+Red, Blue, Yellow
+
+Fail Reason: Expected output &quot;Red, Blue, Yellow&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;Red, Blue, Yellow&quot; to equal &quot;96&quot;
+---
+Red, Blue, Yellow
+
+Fail Reason: Expected output &quot;Red, Blue, Yellow&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;The Titanic sank on April 15, 1912.&quot; to equal &quot;96&quot;
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output &quot;The Titanic sank on April 15, 1912.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;The Titanic sank on April 15, 1912.&quot; to equal &quot;96&quot;
+---
+The Titanic sank on April 15, 1912.
+
+Fail Reason: Expected output &quot;The Titanic sank on April 15, 1912.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+  Expected output &quot;{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}&quot; to equal &quot;96&quot;
+---
+{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}
+
+  Fail Reason: Expected output &quot;{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+  Expected output &quot;{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}&quot; to equal &quot;96&quot;
+---
+{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}
+
+  Fail Reason: Expected output &quot;{
+&quot;person&quot;: {
+    &quot;firstName&quot;: &quot;John&quot;,
+    &quot;lastName&quot;: &quot;Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Street&quot;,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;state&quot;: &quot;NY&quot;,
+        &quot;postalCode&quot;: &quot;10001&quot;
+    }
+}
+}&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.&quot; to equal &quot;96&quot;
+---
+The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.
+
+Fail Reason: Expected output &quot;The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.&quot; to equal &quot;96&quot;
+---
+The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.
+
+Fail Reason: Expected output &quot;The sky appears blue because of a process called Rayleigh scattering. As sunlight reaches Earth&#39;s atmosphere, it is scattered in all directions by the gases and particles in the air. Blue light is scattered in all directions more than other colors because it travels as shorter, smaller waves. This is known as Rayleigh scattering. When we look at the sky, we see this blue light scattered from all parts of the sky, not just from the direction of the sun, which gives the appearance of a blue sky.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.&quot; to equal &quot;96&quot;
+---
+Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.
+
+Fail Reason: Expected output &quot;Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.&quot; to equal &quot;96&quot;">[FAIL] (0.00)
+
+Expected output &quot;Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.&quot; to equal &quot;96&quot;
+---
+Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.
+
+Fail Reason: Expected output &quot;Elephants are known to be capable of recognizing themselves in a mirror. They are among a small group of animals that display this kind of self-awareness.&quot; to equal &quot;96&quot;</td>
+          
+          <td data-content="[PASS] (1.00)
+
+96
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+96
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
