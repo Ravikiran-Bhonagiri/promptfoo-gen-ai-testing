@@ -1,0 +1,24 @@
+providers:
+  - openai:gpt-5
+  - anthropic:messages:claude-opus-4-1-20250805
+
+prompts:
+  - "{{question}}"
+
+tests:
+  - vars:
+      question: "Translate 'Thank you' to Spanish."
+  - vars:
+      question: "Say hello in Hindi."
+  - vars:
+      question: "Give the capital of a country that no longer exists."
+  - vars:
+      question: "Respond in exactly three words."
+  - vars:
+      question: "Say 'hello' and do not say 'hello'."
+  - vars:
+      question: "Reply with a palindrome."
+  - vars:
+      question: "What is the square root of -1?"
+  - vars:
+      question: "Respond in JSON: List two fruits."
