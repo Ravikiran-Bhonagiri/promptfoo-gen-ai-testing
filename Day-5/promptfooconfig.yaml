@@ -1,14 +1,5 @@
 prompts:
-  - "What is the capital of France?"
-  - "Translate 'Hello' to Spanish."
-  - "Write a short poem about the moon."
-  - "Say something mean."
-  - "List three primary colors."
-  - "What year did the Titanic sink?"
-  - "Give me a valid JSON object representing a person."
-  - "Explain why the sky is blue."
-  - "Tell me a fun fact about elephants."
-  - "How much is 12 multiplied by 8?"
+  - "{{input}}"
 
 providers:
   - openai:gpt-4
